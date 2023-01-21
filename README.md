@@ -1,8 +1,8 @@
 # How to add [fullpage.js](https://alvarotrigo.com/fullPage) to elementor
 
-##Requirement:
-Encorporate fullpage.js to elementor without [Wordpress fullpage.js](https://alvarotrigo.com/fullPage/wordpress-plugin-elementor/).
-
+## Requirement:
+The challenge was to add fullpage.js to elementor without [Wordpress fullpage.js plugin](https://alvarotrigo.com/fullPage/wordpress-plugin-elementor/).
+We are using the wordpress theme Xstore you can do this in any theme. The main thing is footer file.
 
 [Demo Link](http://the-liana.com) We have setup on a site
 
