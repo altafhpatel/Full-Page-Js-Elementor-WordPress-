@@ -133,3 +133,16 @@ function full_page_color_switch(){
 }
 ```
 What the above function do is switch the header color scheme according to the class given to the section and also it switch the sidebar navigation bullets.
+
+-------------------------------------------------------------------
+### Developer Information
+1. My name is Altaf Hussain Patel based in Pakistan. Love to customize wordpress according to their requirement.
+2. Basically repo is created for those who are searching for the solution to create custom templates.
+3. Visit my website [propatel.com](https://propatel.com).
+
+### Hire me for your custom wordpress requirement. Send me an email (propatel2 [at] gmail.com]
+
+## Request
+1. We appreciate other developers effort. Please provide your feedback to make it more useful for others.
+
+Thanks for visiting.
