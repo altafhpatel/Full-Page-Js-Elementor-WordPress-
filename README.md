@@ -82,11 +82,11 @@ Encorporate fullpage.js to elementor without [Wordpress fullpage.js](https://alv
 			//events
 			onLeave: function(origin, destination, direction){},
 			afterLoad: function(origin, destination, direction){
-				full_page_color_switch();
+				//full_page_color_switch();
 				
 			},
 			afterRender: function(){
-				full_page_color_switch();
+				//full_page_color_switch();
 			},
 			afterResize: function(width, height){},
 			afterReBuild: function(){},
@@ -100,3 +100,36 @@ Encorporate fullpage.js to elementor without [Wordpress fullpage.js](https://alv
 5. There is a line called **fixedElements: '#header',** in the code above
 6. Use your fixed element class or id (in my case this is #header
 7. Enjoy using fullpage.js in elementor.
+
+### Extras Work 
+There is another thing i have done is call back function after load and after render
+```JS
+function full_page_color_switch(){
+	var activeSection = jQuery('.elementor-section.active');
+	if(activeSection.length){
+		if(activeSection.hasClass('darksection')){
+			jQuery('#header').removeClass('makeheaderlight');
+			jQuery('#header').removeClass('makeheaderdark');
+			jQuery('#fp-nav').removeClass('makenavlight');
+			jQuery('#fp-nav').removeClass('makenavdark');
+			jQuery('.et_b_header-logo-img').removeClass('makelogodark');
+			jQuery('.et_b_header-logo-img').removeClass('makelogolight');
+			jQuery('#header').addClass('makeheaderlight');
+			jQuery('#fp-nav').addClass('makenavlight');
+			jQuery('.et_b_header-logo-img').addClass('makelogolight');
+		}
+		if(activeSection.hasClass('lightsection')){
+			jQuery('#header').removeClass('makeheaderlight');
+			jQuery('#header').removeClass('makeheaderdark');
+			jQuery('#fp-nav').removeClass('makenavlight');
+			jQuery('#fp-nav').removeClass('makenavdark');
+			jQuery('.et_b_header-logo-img').removeClass('makelogodark');
+			jQuery('.et_b_header-logo-img').removeClass('makelogolight');
+			jQuery('#header').addClass('makeheaderdark');
+			jQuery('#fp-nav').addClass('makenavdark');
+			jQuery('.et_b_header-logo-img').addClass('makelogodark');
+		}
+	}
+}
+```
+What the above function do is switch the header color scheme according to the class given to the section and also it switch the sidebar navigation bullets.
