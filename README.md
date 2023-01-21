@@ -4,6 +4,8 @@
 Encorporate fullpage.js to elementor without [Wordpress fullpage.js](https://alvarotrigo.com/fullPage/wordpress-plugin-elementor/).
 
 
+[Demo Link](http://the-liana.com) We have setup on a site
+
 ## How to Add
 1. Copy the footer file from parent theme to child theme
 2. First create full height sections in elementor the setting is given below
