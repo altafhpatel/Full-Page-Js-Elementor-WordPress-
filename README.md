@@ -14,7 +14,7 @@ Encorporate fullpage.js to elementor without [Wordpress fullpage.js](https://alv
 
 4. Paste the following code to your footer (or use footer script plugin) to add js to your theme. We recommeneded to add via footer.php so conditions can be added. paste the below code before wp_footer();
 
-<code>
+```JS
 	<script type="text/javascript">
 	jQuery(document).ready(function(){
 		var myFullpage = new fullpage('.page-wrapper', {
@@ -93,4 +93,4 @@ Encorporate fullpage.js to elementor without [Wordpress fullpage.js](https://alv
 			onSlideLeave: function(section, origin, destination, direction){}
 		});
 </script>
-	</code>
+```
