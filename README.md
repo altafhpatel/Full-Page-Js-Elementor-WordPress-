@@ -94,3 +94,7 @@ Encorporate fullpage.js to elementor without [Wordpress fullpage.js](https://alv
 		});
 </script>
 ```
+
+5. There is a line called **fixedElements: '#header',** in the code above
+6. Use your fixed element class or id (in my case this is #header
+7. Enjoy using fullpage.js in elementor.
